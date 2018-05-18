@@ -51,15 +51,15 @@ while True:
     time.sleep(0.5)
     print(f"It's your turn {player.name}: ")
     time.sleep(0.5)
-    print(f"{player.name} has {player.hp} left.\n")
-    time.sleep(0.5)
+    #print(f"{player.name} has {player.hp} left.\n")
+    #time.sleep(0.5)
     player.attack_opponent(opponent)
     
     if opponent.hp <= 0:
         print(f"{opponent.name} was defeated!\n")
         break
     time.sleep(.8)
-    print(f"It's {opponent.name}'s turn.")
+    print(f"It's {opponent.name}'s turn.\n")
     time.sleep(.8)
     opponent.attack_player(player)
     if player.hp <= 0:

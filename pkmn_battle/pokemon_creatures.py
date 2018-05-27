@@ -3,7 +3,7 @@ import time
 import random
 
 class Pokemon:
-    def __init__(self, attributes):
+    def __init__(self, attributes, opponent_number):
         self.number = opponent_number
         self.name = attributes['Name']
         self.type1 = attributes['Type1']
